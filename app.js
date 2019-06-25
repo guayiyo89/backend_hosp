@@ -33,7 +33,7 @@ var uploadRoutes = require('./routes/upload');
 var imageRoutes = require('./routes/imagenes');
 
 //Conexion a la DB
-mongoose.connection.openUri('mongodb://guayiyo89:Hocico1989@ds217898.mlab.com:17898/hospital_guayo', (err, res) => {
+mongoose.connection.openUri('mongodb://<User>:<PW>@ds217898.mlab.com:17898/hospital_guayo', (err, res) => {
     if (err) throw err;
     console.log('Base de datos: \x1b[32m%s\x1b[0m', 'online');
 } );
